@@ -30,7 +30,6 @@ this resulats of prototype :
 <img width="733" height="590" alt="téléchargement (73)" src="https://github.com/user-attachments/assets/8c8df736-1bdc-47c2-bd38-c60c06188104" />
 
 <img width="1189" height="390" alt="téléchargement (72)" src="https://github.com/user-attachments/assets/9096ccbd-8e97-42e0-b67d-2ecaeac0ed81" />
-<img width="1189" height="495" alt="téléchargement (71)" src="https://github.com/user-attachments/assets/efaf97b3-3da1-4393-b1c4-69ab819c7c02" />
 
 ## Quick Start
 
