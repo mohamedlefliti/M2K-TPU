@@ -56,3 +56,132 @@ y = jax.nn.one_hot(y, 10)
 # Train
 trainer = Trainer(model, Adam(model.parameters()), CrossEntropyLoss())
 trainer.fit(X, y, epochs=5)
+
+
+# final output :
+============================================================
+📸 IMAGE CLASSIFICATION WITH M2K LIBRARY
+============================================================
+✅ JAX version: 0.7.2
+
+============================================================
+🏁 M2K IMAGE CLASSIFICATION DEMO
+============================================================
+
+🎯 Running Image Classifier Training...
+
+============================================================
+🤖 TRAINING IMAGE CLASSIFIER WITH M2K
+============================================================
+
+============================================================
+🖼️ Creating synthetic image classification dataset
+============================================================
+✅ Dataset created successfully!
+   Total samples: 800
+   Features per sample: 100
+   Number of classes: 5
+   Training samples: 560
+   Validation samples: 80
+   Test samples: 160
+
+============================================================
+🏗️ Building Neural Network Model
+============================================================
+
+Module: SimpleClassifier
+  SimpleClassifier.linear_0.linear_0.weight: (100, 50) (5,000)
+  SimpleClassifier.linear_0.linear_0.bias: (50,) (50)
+  SimpleClassifier.linear_2.linear_2.weight: (50, 5) (250)
+  SimpleClassifier.linear_2.linear_2.bias: (5,) (5)
+Total parameters: 5,305
+
+============================================================
+🚂 Training Model
+============================================================
+
+🚀 Starting training for 15 epochs
+   Batch size: 32
+   Learning rate: 0.01
+   Training samples: 560
+   Validation samples: 80
+
+--------------------------------------------------------------------------------
+Epoch  | Train Loss | Train Acc | Val Loss | Val Acc | Time
+--------------------------------------------------------------------------------
+    1 |     1.9456 |    0.2170 |   1.8554 |  0.2125 |  0.40s
+    5 |     1.6025 |    0.3021 |   1.6691 |  0.2125 |  1.03s
+   10 |     1.4027 |    0.4184 |   1.5861 |  0.3125 |  1.37s
+   15 |     1.2614 |    0.5087 |   1.5361 |  0.3375 |  0.70s
+--------------------------------------------------------------------------------
+
+✅ Training completed!
+
+============================================================
+📈 Training History
+============================================================
+
+
+============================================================
+🧪 Final Evaluation
+============================================================
+
+🧪 Evaluating on test set...
+📊 Test Evaluation:
+   Loss: 1.5429
+   Accuracy: 0.3750 (37.50%)
+
+📊 Test Set Performance:
+   Accuracy: 0.3750 (37.50%)
+
+📋 Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.29      0.29      0.29        21
+           1       0.42      0.42      0.42        38
+           2       0.33      0.34      0.34        35
+           3       0.44      0.32      0.38        37
+           4       0.37      0.48      0.42        29
+
+    accuracy                           0.38       160
+   macro avg       0.37      0.37      0.37       160
+weighted avg       0.38      0.38      0.37       160
+
+
+
+============================================================
+🔮 Sample Predictions
+============================================================
+
+Sample predictions:
+----------------------------------------
+ Index     True     Pred     Status
+----------------------------------------
+     0        3        0          ✗
+     1        0        1          ✗
+     2        0        0          ✓
+     3        2        3          ✗
+     4        1        2          ✗
+----------------------------------------
+Accuracy on 5 samples: 1/5 = 20.00%
+
+============================================================
+💾 Model Information
+============================================================
+📊 Final Statistics:
+   Model: SimpleClassifier
+   Final training accuracy: 0.5087 (50.87%)
+   Final validation accuracy: 0.3375 (33.75%)
+   Test accuracy: 0.3750 (37.50%)
+   Total training time: 12.57 seconds
+
+============================================================
+🎉 DEMO COMPLETED SUCCESSFULLY!
+============================================================
+
+📋 Summary:
+✅ Neural network library (M2K) is working!
+✅ Image classification pipeline executed successfully!
+✅ Model trained and evaluated!
+✅ All visualizations generated!
+
